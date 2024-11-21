@@ -32,10 +32,11 @@ for i in ((bollywood_movies)):
     print(i,':',bollywood_movies[i],end='''
 
 ''')
-g=input("enter the genre: " )
+b=input("enter the detail you want to search")
+g=input("enter the",b," : ")
 for i in  bollywood_movies.keys():
     a1=bollywood_movies.get(i)
-    a2=a1.get('GENRE')
+    a2=a1.get(b)
     if a2==g:
         print(i)
 
